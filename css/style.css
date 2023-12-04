@@ -168,6 +168,7 @@ main .row {
     flex-wrap: wrap;
     margin: 0 -.5rem;
     row-gap: 1rem;
+    margin-top: 20px;
 }
 
 main .col {
@@ -186,12 +187,10 @@ main .col {
 /* Sections */
 
 main section {
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
-main h1 {
-    margin-bottom: 20px;
-}
+main h1 {}
 
 
 /* !Recently played */
