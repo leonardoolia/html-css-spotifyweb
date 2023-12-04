@@ -10,8 +10,13 @@
 /* ?SOPRA I 992PX (DESKTOP) M*/
 @media screen and (min-width: 992px) {
     main .col {
-        flex-basis: 100% / 4;
+        flex-basis: calc(100% / 4);
     }
 }
 
-/* ?SOPRA I 1080PX (DESKTOP) L*/
+/* ?SOPRA I 1200PX (DESKTOP) L*/
+@media screen and (min-width: 1200px) {
+    main .col {
+        flex-basis: calc(100% / 6);
+    }
+}
