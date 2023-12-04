@@ -32,6 +32,7 @@ ul {
 
 img {
     width: 100%;
+    height: auto;
     /* display: block; */
 }
 
@@ -133,3 +134,63 @@ header {
     font-style: normal;
     font-weight: bold;
 }
+
+/* MAIN */
+
+/* !Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 10px;
+}
+
+header a {
+    color: var(--primarycolor);
+    border: 2px solid var(--primarycolor);
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+/* !Navbar */
+#main-navbar>ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 15px;
+}
+
+
+/* !Regole generiche per le row */
+main .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -.5rem;
+    row-gap: 1rem;
+}
+
+main .col {
+    flex-basis: calc(100% / 2);
+    padding: 0 .5rem;
+    border: 1px solid black;
+}
+
+.card {
+    height: 200px;
+    background-color: red;
+}
+
+
+
+/* Sections */
+
+main section {
+    margin-top: 30px;
+}
+
+main h1 {
+    margin-bottom: 20px;
+}
+
+
+/* !Recently played */
