@@ -4,3 +4,51 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* ?GENERALS */
+
+/* !2 blocchi principali */
+#top-content {
+    height: calc(100vh - 80px);
+    background-color: blue;
+    display: flex;
+}
+
+footer {
+    height: 80px;
+    background-color: brown;
+}
+
+/* !Blocchi dentro al top-content */
+main {
+    overflow: auto;
+}
+
+.sidebar {
+    /* width: 40px; */
+    height: 100%;
+    padding: 10px;
+    background-color: chocolate;
+    /* position: fixed;
+    top: 0;
+    left: 0; */
+}
+
+/* !Blocchi dentro al main */
+header {
+    height: 80px;
+    background-color: aquamarine;
+    position: sticky;
+    top: 0;
+    right: 0;
+}
+
+
+
+
+/* ?UTILS */
+
+.container {
+    margin: 0 auto;
+    padding: 20px
+}
