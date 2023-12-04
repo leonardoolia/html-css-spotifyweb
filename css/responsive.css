@@ -1,0 +1,10 @@
+/* ?SOPRA I 768PX (TABLET) */
+@media screen and (min-width: 768px) {
+
+    .sidebar {
+        max-width: 180px;
+    }
+
+}
+
+/* ?SOPRA I 992PX (DESKTOP) */
