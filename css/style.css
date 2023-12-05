@@ -274,7 +274,7 @@ main h1 {}
 
 .progress-line {
     height: 5px;
-    width: 60px;
+    width: 80px;
     background-color: var(--secondarycolor);
     border-radius: 5px;
     position: relative;
@@ -289,4 +289,16 @@ main h1 {}
     width: 30%;
     background-color: var(--primarycolor);
     border-radius: 5px;
+}
+
+
+
+/* Sezione a destra */
+.footer-volume {
+    flex-basis: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    color: var(--primarycolor)
 }
