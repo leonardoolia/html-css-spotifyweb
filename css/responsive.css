@@ -45,6 +45,11 @@
         display: block;
     }
 
+    /* L'immagine nel footer diventa più grande */
+    .footer-song-details img {
+        height: 90%;
+    }
+
 }
 
 /* ?SOPRA I 800PX (DESKTOP) M*/

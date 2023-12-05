@@ -313,6 +313,7 @@ footer i:hover {
 
 .song-info {
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
 }
 
@@ -325,11 +326,19 @@ footer i:hover {
     margin-left: 10px;
 }
 
+.song-name {
+    flex-basis: 10%;
+    flex-grow: 1
+}
+
+.song-name h4:hover {
+    color: var(--primarycolor);
+    text-decoration: underline;
+}
+
 .footer-song-details img {
     height: 70%;
     width: auto;
-    margin-top: 5px;
-
 }
 
 .favorite {
