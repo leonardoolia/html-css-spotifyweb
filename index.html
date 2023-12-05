@@ -33,6 +33,8 @@
 
 <body>
     <div id="top-content">
+
+        <!-- Sidebar di sinistra -->
         <div class="sidebar">
             <div class="sidebar-logo">
 
@@ -46,11 +48,12 @@
             </div>
             <div class="sidebar-playlist hidden"></div>
             <div class="sidebar-info">
-                <img src="img/download.svg"><span class="hidden">Installa app</span>
+                <a href="#"><img src="img/download.svg"><span class="hidden">Installa app</span></a>
                 <address><img src="img/profile.svg"></address>
             </div>
         </div>
 
+        <!-- Main a destra -->
         <main>
             <header>
                 <a href="#">EFFETTUA L'UPGRADE</a>
@@ -203,10 +206,27 @@
     </div>
 
     <footer>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque, obcaecati. Tenetur inventore necessitatibus eum
-        possimus sequi facere pariatur, libero aliquid. Quis atque cum pariatur similique labore, adipisci ullam tempora
-        accusamus.
+        <!-- Sezione dettagli canzone -->
+        <div class="footer-song-details">
+            <div class="song-info">
+                <img src="img/sinister.jpeg" alt="cover sinister">
+                <div class="song-name">
+                    <h2>Sinister</h2>
+                    <h4>Brano</h4>
+                    <h4>Nome</h4>
+                </div>
+            </div>
+            <div class="favorite">
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                <a href="#"><i class="fa-regular fa-folder"></i></a>
+            </div>
+        </div>
+
+        <!-- Sezione play -->
+        <div class="footer-play"></div>
+
+        <!-- Sezione volume -->
+        <div class="footer-volume"></div>
     </footer>
-</body>
 
 </html>

@@ -33,7 +33,7 @@ ul {
 img {
     width: 100%;
     height: auto;
-    /* display: block; */
+    display: block;
 }
 
 /* !2 blocchi principali */
@@ -41,24 +41,28 @@ img {
     height: calc(100vh - 80px);
     background-color: blue;
     display: flex;
+    overflow: auto;
 }
 
 footer {
     height: 80px;
     background-color: brown;
+    padding: 10px;
+    /* display: flex;
+    align-items: center; */
 }
 
 /* !Blocchi dentro al top-content */
 main {
     overflow: auto;
-    flex-basis: 90%;
+    flex-grow: 1;
 }
 
 .sidebar {
     max-height: calc(100vh - 80px);
-    flex-grow: 1;
-    flex-basis: 10%;
-    /* height: 100%; */
+    flex-basis: 50px;
+    /*aumentare solo la dimensione della flex-basis nel mediaquery*/
+    flex-shrink: 0;
     padding: 10px;
     background-color: chocolate;
     display: flex;
@@ -107,7 +111,7 @@ header {
 }
 
 .sidebar-logo img {
-    width: 50%;
+    width: 30px;
     margin-bottom: 5px;
 }
 
@@ -127,7 +131,7 @@ header {
 }
 
 .sidebar-info img {
-    width: 40%;
+    width: 25px;
 
 }
 
@@ -194,3 +198,41 @@ main h1 {}
 
 
 /* !Recently played */
+
+
+
+
+
+
+/* ?FOOTER */
+
+.footer-song-details {
+    height: 60px;
+    padding: 10px 0;
+    flex-basis: 25%;
+    display: flex;
+    gap: 10px;
+}
+
+.song-info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.song-info h2 {
+    color: var(--primarycolor);
+}
+
+.song-name>* {
+    scale: 0.7;
+}
+
+.footer-song-details img {
+    height: 80%;
+    width: auto;
+}
+
+.favorite {
+    display: flex;
+    flex-direction: column;
+}
