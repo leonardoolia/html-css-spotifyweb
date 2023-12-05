@@ -1,10 +1,38 @@
 /* ?SOPRA I 768PX (TABLET) S*/
 @media screen and (min-width: 768px) {
 
+    /* Sidebar diventa più larga */
     .sidebar {
-        max-width: 180px;
+        flex-basis: 150px;
     }
 
+    /* Sparisce il logo spotify piccolo e compare quello grande */
+    #small-logo {
+        display: none;
+    }
+
+    #big-logo {
+        display: block;
+    }
+
+    /* Compaiono le scritte vicino alle icone della sidebar */
+    .sidebar-logo span {
+        display: inline-block;
+    }
+
+    .sidebar-info span {
+        display: inline-block;
+    }
+
+    .sidebar-info {
+        align-self: flex-start;
+        align-items: flex-start;
+    }
+
+    /* Compare la sezione playlist */
+    .sidebar-playlist {
+        display: block;
+    }
 }
 
 /* ?SOPRA I 800PX (DESKTOP) M*/
