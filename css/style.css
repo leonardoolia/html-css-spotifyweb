@@ -178,16 +178,24 @@ main .row {
 main .col {
     flex-basis: calc(100% / 2);
     padding: 0 .5rem;
-    border: 1px solid black;
 }
 
 .card {
-    min-height: 200px;
-    background-color: red;
+    /* min-height: 200px; */
 }
 
 .card-image>img {
     max-height: 60%
+}
+
+.card-text {
+    text-align: center;
+}
+
+.card-text h2 {
+    color: var(--primarycolor);
+    font-size: 1.5rem;
+    margin: 10px 0 5px 0;
 }
 
 
@@ -198,10 +206,17 @@ main section {
     margin-top: 50px;
 }
 
-main h1 {}
+main h1 {
+    font-size: 2rem;
+    color: var(--primarycolor);
+}
 
 
-/* !Recently played */
+/* !Popular artists */
+
+.popular-artists .card-image img {
+    border-radius: 50%;
+}
 
 
 
