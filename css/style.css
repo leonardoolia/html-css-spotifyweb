@@ -70,7 +70,14 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+}
 
+.sidebar li:hover {
+    text-shadow: 0 0 10px white;
+}
+
+.sidebar a:hover {
+    color: var(--primarycolor);
 }
 
 /* !Blocchi dentro al main */
@@ -81,7 +88,6 @@ header {
     top: 0;
     right: 0;
 }
-
 
 
 
@@ -149,6 +155,11 @@ header {
 
 .create-playlist {
     margin: 20px 0;
+}
+
+.create-playlist:hover {
+    color: var(--primarycolor);
+    text-shadow: 0 0 10px white;
 }
 
 
