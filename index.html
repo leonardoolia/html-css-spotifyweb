@@ -36,21 +36,24 @@
 
         <!-- Sidebar di sinistra -->
         <div class="sidebar">
+            <!-- Sezione home, cerca, la tua libreria -->
             <div class="sidebar-logo">
                 <img src="img/logo-small.svg" id="small-logo" alt="logo spotify piccolo">
                 <img src="img/logo.svg" id="big-logo" alt="logo spotify grande">
 
                 <ul>
-                    <li><img src="img/home.svg" alt="logo home"><a href="#"><span id="home">Home</span></a></li>
-                    <li><img src="img/search.svg" alt="logo search"><a href="#"><span>Cerca</span></a></li>
-                    <li><img src="img/libreria.svg" alt="logo libreria"><a href="#"><span>La tua libreria</span></a>
+                    <li><a href="#"><img src="img/home.svg" alt="logo home"><span id="home">Home</span></a></li>
+                    <li><a href="#"><img src="img/search.svg" alt="logo search"><span>Cerca</span></a></li>
+                    <li><a href="#"><img src="img/libreria.svg" alt="logo libreria"><span>La tua libreria</span></a>
                     </li>
                 </ul>
             </div>
+
+            <!-- Sezione playlist -->
             <div class="sidebar-playlist">
                 <h3>PLAYLIST</h3>
-                <div>
-                    <i class="fa-solid fa-square-plus"></i>
+                <div class="create-playlist">
+                    <i class="fa-solid fa-square-plus fa-2xl"></i>
                     <span class="new-playlist">Crea Playlist</span>
                 </div>
                 <ul>
@@ -62,11 +65,25 @@
                     <li><a href="#">Nome Playlist</a></li>
                     <li><a href="#">Nome Playlist</a></li>
                     <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
                 </ul>
             </div>
+
+            <!-- Sezione installa -->
             <div class="sidebar-info">
-                <a href="#"><img src="img/download.svg"><span class="install">Installa app</span></a>
-                <address><img src="img/profile.svg"></address><span class="username">John Doe</span>
+                <div class="install-section">
+                    <a href="#"><img src="img/download.svg"></a>
+                    <span class="install">Installa app</span>
+                </div>
+                <div class="user-info">
+                    <address><a href="#"><img src="img/profile.svg"></a></address>
+                    <span class="username">John Doe</span>
+                </div>
             </div>
         </div>
 

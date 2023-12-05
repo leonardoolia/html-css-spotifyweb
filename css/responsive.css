@@ -3,7 +3,7 @@
 
     /* Sidebar diventa più larga */
     .sidebar {
-        flex-basis: 150px;
+        flex-basis: 160px;
     }
 
     /* Sparisce il logo spotify piccolo e compare quello grande */
@@ -33,6 +33,18 @@
     .sidebar-playlist {
         display: block;
     }
+
+    /* Compare linea tra install section e user info */
+    .user-info {
+        padding-top: 10px;
+        border-top: 1px solid var(--secondarycolor);
+    }
+
+    /* La sidebar diventa display block */
+    .sidebar {
+        display: block;
+    }
+
 }
 
 /* ?SOPRA I 800PX (DESKTOP) M*/
