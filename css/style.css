@@ -121,7 +121,6 @@ header {
 
 /* !Sidebar-info */
 .sidebar-info {
-    background-color: crimson;
     height: 10%;
     display: flex;
     flex-direction: column;
@@ -183,8 +182,12 @@ main .col {
 }
 
 .card {
-    height: 200px;
+    min-height: 200px;
     background-color: red;
+}
+
+.card-image>img {
+    max-height: 60%
 }
 
 
@@ -226,12 +229,15 @@ main h1 {}
 }
 
 .song-name>* {
-    scale: 0.7;
+    font-size: .7rem;
+    margin-left: 10px;
 }
 
 .footer-song-details img {
-    height: 80%;
+    height: 70%;
     width: auto;
+    margin-top: 5px;
+
 }
 
 .favorite {
@@ -301,4 +307,8 @@ main h1 {}
     justify-content: flex-end;
     gap: 10px;
     color: var(--primarycolor)
+}
+
+.footer-volume .progress-line {
+    width: 60px;
 }
