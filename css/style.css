@@ -80,16 +80,6 @@ main {
     color: var(--primarycolor);
 }
 
-/* !Blocchi dentro al main */
-header {
-    height: 80px;
-    background-color: aquamarine;
-    position: sticky;
-    top: 0;
-    right: 0;
-}
-
-
 
 /* ?UTILS */
 
@@ -216,7 +206,21 @@ header {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    padding-right: 10px;
+    padding-right: 20px;
+    height: 80px;
+    position: sticky;
+    top: 0;
+    right: 0;
+}
+
+#full-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 header a {
@@ -226,12 +230,20 @@ header a {
     padding: 10px 20px;
 }
 
+header div:hover {
+    transform: scale(1.1);
+}
+
 /* !Navbar */
 #main-navbar>ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 15px;
+}
+
+#main-navbar li:hover a {
+    color: var(--primarycolor)
 }
 
 
