@@ -70,7 +70,9 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    overflow: auto;
 }
+
 
 .sidebar li:hover {
     text-shadow: 0 0 10px white;
@@ -165,10 +167,9 @@ main {
 
 /* !Sidebar-info */
 .sidebar-info {
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     text-align: center;
     gap: 10px;
@@ -178,7 +179,7 @@ main {
     width: 100%;
     display: flex;
     align-items: center;
-    gap: 10px
+    gap: 10px;
 }
 
 .sidebar-info img {
@@ -300,6 +301,7 @@ main .col {
 .card-image:hover .play-button {
     display: flex;
     cursor: pointer;
+
 }
 
 .card-image .play-button {
@@ -314,6 +316,8 @@ main .col {
     align-items: center;
     justify-content: center;
 }
+
+
 
 
 /* Sections */
