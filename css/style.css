@@ -3,6 +3,8 @@
 :root {
     --primarycolor: #fff;
     --secondarycolor: #a3a3a3;
+    --bglight: #141922;
+    --bgdark: #000000;
 }
 
 
@@ -39,14 +41,14 @@ img {
 /* !2 blocchi principali */
 #top-content {
     height: calc(100vh - 80px);
-    background-color: blue;
+    background-color: var(--bglight);
     display: flex;
     overflow: auto;
 }
 
 footer {
     height: 80px;
-    background-color: brown;
+    background-color: #282828;
     padding: 10px;
     display: flex;
     /* display: flex;
@@ -65,7 +67,7 @@ main {
     /*aumentare solo la dimensione della flex-basis nel mediaquery*/
     flex-shrink: 0;
     padding: 10px;
-    background-color: chocolate;
+    background-color: var(--bgdark);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -221,6 +223,10 @@ header {
     right: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.6);
+}
+
+#full-header a {
+    position: relative;
 }
 
 header a {
