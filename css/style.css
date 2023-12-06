@@ -133,7 +133,7 @@ main {
     height: 200px;
     overflow: hidden;
     display: none;
-    margin: 10px 0 200px 0
+    margin: 20px 0 180px 0;
 }
 
 .sidebar-playlist:hover {
@@ -143,11 +143,14 @@ main {
 
 .sidebar-playlist h3 {
     color: var(--primarycolor);
+    font-size: 1rem;
 }
 
 .create-playlist {
     margin: 20px 0;
+    cursor: pointer;
 }
+
 
 .create-playlist:hover {
     color: var(--primarycolor);
@@ -182,17 +185,26 @@ main {
 
 .sidebar-info img {
     width: 20px;
+}
 
+.install-section {
+    margin-left: 2px;
 }
 
 .sidebar-info address {
     font-style: normal;
     font-weight: bold;
-
 }
 
 .sidebar-info span {
     display: none;
+}
+
+.user-info img {
+    width: 25px;
+    background-color: var(--secondarycolor);
+    border-radius: 50%;
+    padding: 2px
 }
 
 .username {
@@ -252,6 +264,16 @@ header div:hover {
     color: var(--primarycolor)
 }
 
+/* Linea verde sotto le li della navbar */
+#main-navbar li.active::after {
+    content: '';
+    display: block;
+    width: 30%;
+    height: 2px;
+    background-color: #adff2f;
+    margin: 3px auto;
+}
+
 
 /* !Regole generiche per le row */
 main .row {
@@ -285,6 +307,27 @@ main .col {
     margin: 10px 0 5px 0;
 }
 
+.card-image {
+    position: relative;
+}
+
+.card-image:hover .play-button {
+    display: flex;
+    cursor: pointer;
+}
+
+.card-image .play-button {
+    color: var(--primarycolor);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
 
 
 /* Sections */
@@ -360,9 +403,9 @@ footer i:hover {
 }
 
 .favorite {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    width: 10px;
+    flex-grow: 1;
+    align-self: center;
 }
 
 .favorite i:hover {
