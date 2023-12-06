@@ -4,7 +4,7 @@
     /* Sidebar diventa più larga */
     .sidebar {
         flex-basis: 180px;
-        align-items: flex-start;
+
     }
 
     /* Sparisce il logo spotify piccolo e compare quello grande */
