@@ -455,7 +455,19 @@ footer i:hover {
 }
 
 .current-value-point {
-    width: 5px;
+    width: 15px;
+    height: 15px;
+    background-color: var(--primarycolor);
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 50%;
+    translate: 50% -30%;
+    display: none;
+}
+
+.current-value:hover .current-value-point {
+    display: block;
 }
 
 
